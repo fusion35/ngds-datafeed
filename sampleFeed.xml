@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Dealers>
+
+<!-- Dealer definitions begin here -->
+<Dealer>
+<OrgId>21599</OrgId>   <!--   --> 
+<PaCode>A1091</PaCode>   <!-- dealer_dealerPACode  -->
+<SecondaryPaCode>A3457</SecondaryPaCode>   <!-- OrgID  -->
+<Name>Polito Ford Lincoln Sales</Name>   <!-- Dealer_Trade_Name  -->
+<Country>Canada</Country>   <!-- Geo_Sales_Code  -->
+<Region>07W</Region>   <!-- Region_Code_New  -->
+<Latitude>44.347078</Latitude>   <!-- Primary_Latitude  -->
+<Longitude>-78.770532</Longitude>   <!-- Primary_Longitude  -->
+<DisplayPhone>3138883668</DisplayPhone>   <!-- Area_Code_And_Number  -->
+<Email>director@politfordsales.com</Email>   <!-- Public_Email  -->
+<Fax>3138883668</Fax>   <!-- Central_Office_Fax  -->
+<Phone>3138883668</Phone>   <!-- Area_Code_And_Number  -->
+<Subdomain>politofordsales</Subdomain>   <!--  // generated from dnsmanager -->
+<SalesCode>12345</SalesCode>   <!--  Sales_Point_Number -->
+<Brands>   <!--   -->
+<Brand value="Ford" />
+<Brand value="Lincoln" />
+</Brands>
+<!-- <DealerStatus></DealerStatus>   -->
+<Settings>
+<is_GeS_enabled>False</is_GeS_enabled>   <!--  DROP -->
+<is_hev>False</is_hev>   <!-- HEV_Indicator  -->
+<is_certified_preowned>False</is_certified_preowned>   <!-- based on Ford_Cpo_indicator or LM_CPO_Indicator  -->
+<is_rent_a_car>False</is_rent_a_car>   <!-- rent  -->
+<is_fordparts_opted>False</is_fordparts_opted>   <!-- IsSAndPEnrolled  -->
+<is_PAIS_enrolled>False</is_PAIS_enrolled>   <!--  based on Subscriber_PA_Code -->
+<is_flood_light_enabled>False</is_flood_light_enabled>   <!-- FLOODLIGHT  -->
+<is_autocheck_subscribed>False</is_autocheck_subscribed>   <!-- AUTOCHECK  -->
+<is_SVT>False</is_SVT>   <!-- SVT_Certified_Indicator  -->
+<is_internet_certified>False</is_internet_certified>   <!-- ICERTIFIED_Boolean  -->
+<is_blue_oval_certified>False</is_blue_oval_certified>   <!-- isBlueOvalCertified  -->
+<is_lincoln_premier_experience_certified>False</is_lincoln_premier_experience_certified>   <!-- LPE_Flag  -->
+<is_premier>True</is_premier>   <!-- // generated  -->
+</Settings>
+<PrimaryAddress>
+<Street> 2 Harvest St.,  P.O. Box 656</Street>   <!--   -->
+<City>Lindsay</City>   <!-- Dealer_City  -->
+<State>ON</State>   <!-- Dealer_State  -->
+<PostalCode>K9V4S5</PostalCode>   <!-- Dealer_Zip_Code  -->
+<Label>xyz</Label>   <!-- Street_Address_1  -->
+</PrimaryAddress>
+
+</Dealer>
+
+</Dealers>
+
