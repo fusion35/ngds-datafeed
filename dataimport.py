@@ -25,7 +25,7 @@ def main():
 
 class FeedDealer :    
     feedData ={}
-    #This an attribute mapping between model and xml        
+    #This an attribute dict. between model and xml        
     attrMapping = {
                    'orgid':'OrgId',
                    'code':'PaCode',
@@ -169,20 +169,17 @@ class FeedDealer :
                 dealer['dealership_info'] = DEFAULT_DEALERSHIP_INFO
                 dealer['dealer_type'] = 'displacedDealer'
                 dealer.save()
-                print dealer
+                print 'New Dealer added',dealer['code'],'\n'
     
     def _markDealerAsExpired(self, dbonlydealers):        
         if len(dbonlydealers) > 0:
             print 'starting to process DB dealer \n'
-            for aDealer in dbonlydealers :
-                fDealer = self.feedData.get(aDealer)
-                dealer = connection.Dealer()
-                dealer = fDealer
-                dealer['dealership_info'] = DEFAULT_DEALERSHIP_INFO
-                dealer['dealer_type'] = 'displacedDealer'
+            for aDealer in dbonlydealers :                
+                dealer = connection.Dealer.find_one({'code':aDealer})             
+                dealer['expiry_date'] = datetime.now()
+                dealer['dealer_type'] = 'expiredDealer'
                 dealer.save()
-                print dealer
-        
+                print 'Dealer',dealer['code'],'marked as expired \n'        
                
 if __name__ == '__main__':
     main()
